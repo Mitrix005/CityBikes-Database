@@ -17,7 +17,6 @@ Dwuosobowy
 ```
 projekt-citybikes/
 ├── README.md
-├── requirements.txt       biblioteki Pythona
 ├── schema.sql             skrypt SQL tworzący tabele i indeksy
 ├── import_citybikes.py    logika importu, odpalana cyklicznie
 ├── queries.sql            zapytania analityczne
