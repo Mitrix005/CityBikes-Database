@@ -113,7 +113,7 @@ def load_bikes_time_series() -> pd.DataFrame:
         WHERE
             h.timestamp IS NOT NULL
             AND h.free_bikes IS NOT NULL
-            AND h.timestamp >= (DATE_TRUNC('day', NOW()))
+            AND h.timestamp >= (DATE_TRUNC('day', NOW()) - INTERVAL '1 day')
         GROUP BY
             DATE_TRUNC('hour', h.timestamp)
         ORDER BY
