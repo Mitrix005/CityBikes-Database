@@ -19,8 +19,7 @@ projekt-citybikes/
 ├── README.md
 ├── schema.sql             skrypt SQL tworzący tabele i indeksy
 ├── import_citybikes.py    logika importu, odpalana cyklicznie
-├── queries.sql            zapytania analityczne
-├── raport.pdf             raport projektowy
+├── chart_maker.py         wizualizacja danych
 └── Screenshots/           zrzuty ekranu z działania importu i wizualizacji
 ```
 
@@ -53,12 +52,6 @@ DB_CONFIG = {
 ### 3. Tabele
 
 Tabele tworzą się automatycznie przy pierwszym uruchomieniu importu, skrypt czyta `schema.sql` i wykonuje wszystkie `CREATE TABLE IF NOT EXISTS`.
-
-## Instalacja zależności
-
-```bash
-pip install -r requirements.txt
-```
 
 ## Uruchomienie
 

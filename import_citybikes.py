@@ -15,7 +15,7 @@ DB_CONFIG = {
 	"port": 5432,
 	"dbname": "citybikes",
 	"user": "postgres",
-	"password": "postgres",
+	"password": "root",
 }
 TIMEOUT_SECONDS = 30
 COUNTRY_CODE = "PL"
