@@ -10,7 +10,7 @@ Dwuosobowy
 
 - Python 3.10+
 - PostgreSQL 14+ (lokalnie)
-- biblioteki Pythona: `requests`, `psycopg`, `pandas`
+- biblioteki Pythona: `requests`, `psycopg`, `pandas`, `matplotlib`
 
 ## Struktura projektu
 
@@ -19,6 +19,7 @@ projekt-citybikes/
 ├── README.md
 ├── schema.sql             skrypt SQL tworzący tabele i indeksy
 ├── import_citybikes.py    logika importu, odpalana cyklicznie
+├── database_update.py     skrypt do cyklicznego pobierania danych
 ├── chart_maker.py         wizualizacja danych
 └── Screenshots/           zrzuty ekranu z działania importu i wizualizacji
 ```
